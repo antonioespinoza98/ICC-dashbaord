@@ -8,4 +8,4 @@ response = requests.get(url)
 
 base = pd.read_excel(response.content)
 
-base.head()
+base.to_excel("datos.xlsx", index=False)

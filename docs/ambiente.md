@@ -8,8 +8,11 @@
 ## Prerrequisitos 
 
 + Python
-+ Anaconda
++ [Anaconda](https://docs.anaconda.com/free/anaconda/install/index.html)
 + PowerBI
+
+<span style="color: red; font-weight: bold;">NOTA</span>
+Al descargar Ananconda, deben declarar la dirección de la instalación en las variables PATH en su sistema operativo Windows o MacOS. El siguiente [link](https://medium.com/@hektorprofe/tutorial-windows-10-agregar-el-python-de-anaconda-al-path-para-utilizarlo-en-la-cmd-y-powershell-72acf22901a) tiene información valiosa de cómo realizar esto.
 
 ## GitHub
 
@@ -67,23 +70,3 @@ Para esto, se debe ejecutar el siguiente código en la terminal:
 ```{powershell}
 conda activate estadenv
 ``` 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
