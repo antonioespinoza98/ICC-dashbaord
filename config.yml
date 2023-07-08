@@ -1,0 +1,16 @@
+name: estadenv
+channels:
+  - defaults
+  - conda-forge
+  - anaconda
+dependencies:
+  - python=3.9
+  - git
+  - Flask
+  - pip
+  - pandas
+  - matplotlib
+  - numpy
+  - requests
+  - pyreadstat
+  - schedule
