@@ -13,7 +13,7 @@
 
 ## GitHub
 
-1. Inicialmente se debe descargar `git` en la computadora, para esto pueden accesar al siguiente, descargarlo y seguir las instrucciones de instalación correspondiente. Este está disponible sistemas Windows o MacOS. Por otro lado, **_es necesario contar con una cuenta de GitHub_**. 
+1. Inicialmente se debe descargar `git` en la computadora de forma local. Para esto pueden accesar al siguiente enlace, descargarlo y seguir las instrucciones de instalación correspondiente. Este está disponible sistemas Windows o MacOS. Por otro lado, **_es necesario contar con una cuenta de GitHub_**. 
 
 - [Descargar Git](https://git-scm.com/downloads)
 
@@ -43,13 +43,15 @@
 
     **1.5** También es importante que si está trabajando de forma local con el repositorio, debe crear una rama de trabajo propia donde pueda guardar los cambios. 
 
+Si no tiene mucha experiencia en Git o control de versiones de código, puede dirigirse a el diccionario de [git](https://git-scm.com/docs).
+
     ```{git}
     checkout branch -b marco
     ```
 
 ## Creación del ambiente
 
-Una vez que se tenga configurado el repositorio de forma local, hay que crear el ambiente. El ambiente en Python consiste en una forma de manejar las versiones de Python y los paquetes se que van a utilizar para el desarrollo del código, esto permite ajustar la configuración ante un eventual *bug*.
+Una vez que se tenga configurado el repositorio de forma local, hay que crear el ambiente. El ambiente en Python consiste en una forma de manejar las versiones de Python y los paquetes se que van a utilizar para el desarrollo del código, esto permite ajustar la configuración ante una eventual *pulga*.
 
 1. Primeramente, asegurarse que el archivo `config.yml` esté disponible en los archivos, luego, correr el siguiente comando:
 
@@ -57,6 +59,14 @@ Una vez que se tenga configurado el repositorio de forma local, hay que crear el
 conda env create -f config.yml
 ```
 
+## Activación del ambiente
+
+Cada vez que se va a correr un archivo de Python, hay que asegurarse de que se esté utilizando el ambiente que se creo para fines de este proyecto. 
+Para esto, se debe ejecutar el siguiente código en la terminal:
+
+```{powershell}
+conda activate estadenv
+``` 
 
 
 

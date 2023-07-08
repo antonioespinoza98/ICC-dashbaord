@@ -1,0 +1,42 @@
+name: Extraccion automatizada
+
+on:
+  schedule:
+    - cron: "0 0 1 */3 *"
+
+jobs:
+  automate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Install dependencies
+        run: |
+          pip install requests pandas
+
+      - name: Run Python script
+        run: |
+          python -c "
+          import requests
+          import pandas as pd
+          from datetime import datetime
+
+          def fetch_data():
+              now = datetime.now()
+              month = now.strftime('%b').upper()
+              year = now.strftime('%Y')
+              url = f'http://www.estadistica.ucr.ac.cr/images/EEs/Documentos/Encuestas/Consumidor/Datos/ENCUESTA_CONSUMIDOR_A_{month}_{year}.xlsx'
+              
+              response = requests.get(url)
+              if response.status_code == 200:
+                  base = pd.read_excel(response.content)
+                  
+
+          fetch_data()"
