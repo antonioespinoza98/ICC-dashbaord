@@ -2,6 +2,14 @@
 
 El objetivo de este repositorio es compartir el código utilizado para la creación del dashboard de la Encuesta de Confianza al Consumidor, con la idea de que cualquier persona pueda aportar retroalimentación.
 
+## Autores
+
+1. Marco Espinoza Marín
+2. Sofía Carvajal Fallas
+3. Daniel López Júarez 
+4. Ariana Chacón Navarro
+5. Bryan Monge Blanco
+
 ## Ambiente
 
 1. El primer paso es configurar el ambiente. Para esto, seguir las instrucciones en [configurar ambiente](./docs/ambiente.md).
